@@ -1,0 +1,29 @@
+We can see there is negative sales which isn't possible. We shall remove the negative sales.
+We also observe that there are some 0 values in the total reviews and average reviews from the summary.
+The row indexes for both Average Review and total Reviews are the same and hence these indices can be removed.
+Summary table to show the percentage of books published by different types of publisher.
+The correlation between daily sales and sales price for the genre = Children
+The correlation between daily sales and sales price for the genre = Fiction
+The correlation between daily sales and sales price for the genre = Non-Fiction
+As we can see above,there is a strong negative correlation between Sales price and Daily Sales for Children's genre. However no such strong correlation exists for the other genres.
+
+The purpose of this report is to provide the managers of the publishing company with an understanding of the trend in e-book sales. The report utilizes data from 6000 e-books, which includes 7 different variables that detail e-book sales over a period of many months.
+
+The data contains e-books across 3 major genres of children, fiction and non-fiction. The average sales across each of these genres can be found in figure 1:
+Genre | Calculated Average sales
+-------------------------- | --------------------------
+Children | 55.58
+Fiction | 105.89
+Non Fiction | 75.87
+
+The average sales across all the books during this period is 79.1, with a significant deviation from this value among the three genres. As can be seen from the table and Figure 1, the daily sales of books from different genres are not the same on average.
+Figure 2 is the Summary table to show the percentage of books published by different types of publishers. small/medium, big five, and indie publishes 85 percent of the books from the dataset which makes them significantly over the other publishers.
+Figure 3 shows the relationships between e-book sales with average and total reviews. The graph illustrates that there is no strong association between daily sales and the average review, but there is a moderate correlation between the total review and daily sales, which is positive. Considering the P-Values, the relationship between average sales and daily sales is not very significant whereas total reviews have a very low p-value and hence it has significant importance in the model. After conducting Null Hypothesis Significance Testing, the following conclusions were reached,
+
+- e-Book sales raises by between 0.5496 and 0.5803 when there is a raise in Total Reviews for the book by 1
+- e-Book sales drop by between 1.408 and 0.810 when there is a raise in Average Review for the book by 1 value.
+
+To find out the effect of the sale price on the number of sales, and is this different across genres new data frames are created for different genres for further evaluation. Figure 4 shows the correlation relationship between different genres and daily sales and sales price, from which there exists an insignificant correlation between daily sales and sales price for Fiction and Non-Fiction.
+
+The results of the analysis indicate that there is a strong inverse relationship between the sales price and daily sales for books in the Children's genre. However, no such strong correlation was found for the other genres. This suggests that for the Children's genre, as the sales price increases, the daily sales decrease, but for other genres, this relationship may not be as strong or may not exist at all. This information can be useful for the publishing company to consider when setting prices for the different genres of e-books they offer.
+
